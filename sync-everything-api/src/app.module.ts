@@ -13,7 +13,10 @@ import { mongoDbConnectionString } from './constants';
 @Module({
   imports: [
     MongooseModule.forRoot(mongoDbConnectionString),
-    MongooseModule.forFeature([{ name: 'SyncData', schema: syncDataSchema }]),
+    MongooseModule.forFeature([
+      { name: 'SyncData', schema: syncDataSchema },
+      { name: 'SyncData', schema: syncDataSchema },
+    ]),
   ],
   controllers: [AppController, AuthController, SyncController],
   providers: [AppService, AuthService, SyncService, ...databaseProvider],
