@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sync-everythinc-electron';
+  title = 'sync-everything-web1';
 }
